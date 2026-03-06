@@ -1,0 +1,34 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.esocial</groupId>
+  <artifactId>esocial-app</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <!-- Servlet API (provided par Tomcat) -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>4.0.4</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- MySQL JDBC Driver -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.33</version>
+    </dependency>
+    <!-- JSTL pour JSP -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+  </dependencies>
+</project>
