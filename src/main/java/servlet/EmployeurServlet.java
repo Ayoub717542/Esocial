@@ -22,7 +22,7 @@ public class EmployeurServlet extends HttpServlet {
         try {
             List<Employeur> liste = dao.listerTous();
             req.setAttribute("employeurs", liste);
-            req.getRequestDispatcher("/employeur/list.jsp").forward(req, res);
+            req.getRequestDispatcher("/views/list.jsp").forward(req, res);
 
         } catch (Exception e) {
             throw new ServletException(e);
