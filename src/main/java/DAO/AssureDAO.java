@@ -16,8 +16,7 @@ public class AssureDAO {
 
             ps.setString(1, a.getNom());
             ps.setDouble(2, a.getSalaireMensue());
-            ps.setInt(3, a.getId());
-
+            ps.setInt(3, a.getEmployeurid());
             ps.executeUpdate();
 
         } catch (Exception e) {
@@ -42,8 +41,7 @@ public class AssureDAO {
                 a.setId(rs.getInt("id"));
                 a.setNom(rs.getString("nom"));
                 a.setSalaireMensue(rs.getDouble("salaire_mensuel"));
-                a.setId(rs.getInt("employeur_id"));
-
+                a.setEmployeurid(rs.getInt("employeur_id"));
                 list.add(a);
             }
 

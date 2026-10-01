@@ -1,7 +1,6 @@
 package models;
-
 public class Assure {
-
+    private int employeurId;
 	private int id ;
 	private String nom;
 	private double salaireMensue;
@@ -33,4 +32,10 @@ public class Assure {
 		this.salaireMensue = salaireMensue;
 	}
 
+    public int getEmployeurid() {
+        return employeurId;
+    }
+    public void setEmployeurid(int employeurId) {
+        this.employeurId = employeurId;
+    }
 }
